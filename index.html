@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" class="video-bg-root" data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="JoyAI-Echo: Pushing the Frontier of Long Audio-Visual Generation">
+    <meta name="keywords" content="JoyAI-Echo, long video generation, audio-visual generation, memory bank, streaming video generation">
+    <title>JoyAI-Echo: Pushing the Frontier of Long Audio-Visual Generation</title>
+    <link rel="icon" href="data:,">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <script defer src="./assets/echo-page.js?v=20260529-dark"></script>
+  <script defer src="./assets/cases-data.js?v=20260529-static"></script>
+  <script defer src="./assets/case-sections.js?v=20260529-controls"></script>
+  <link rel="stylesheet" href="./assets/echo-page.css?v=20260529-static">
+  <link rel="stylesheet" href="./assets/gallery-mode.css?v=20260529-controls">
+</head>
+<body class="video-bg-page has-intro">
+    <div class="global-video-bg" aria-hidden="true">
+        <video autoplay muted loop playsinline poster="assets/echo-bg-grid-20s-4k.jpg">
+            <source src="assets/echo-bg-grid-20s-4k.mp4" type="video/mp4">
+        </video>
+        <div class="global-video-tint"></div>
+    </div>
+
+    <header class="site-nav" aria-label="Primary navigation">
+        <nav class="nav-links" aria-label="Page sections">
+            <a href="#abstract">Abstract</a>
+            <a href="#long-video">Gallery</a>
+            <a href="#conclusions">Conclusions</a>
+            <a href="#results">Results</a>
+            <a href="#contributors">Authors</a>
+            <a href="#bibtex">BibTeX</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section id="paper" class="intro-hero-stage" aria-label="JoyAI-Echo overview" data-intro-stage>
+            <div class="intro-stage-sticky">
+                <div class="intro-copy">
+                    <h1 class="intro-title" data-intro-title>
+                        <span class="intro-title-echo">JoyAI-</span><span class="intro-title-long">Echo</span>
+                    </h1>
+                    <div class="intro-typewriter-row" aria-label="Keyword highlights" data-intro-scatter="keywords">
+                        <p class="intro-typewriter">
+                            <span
+                                data-typewriter
+                                data-phrases="Long Video Generation|Cross-modal Memory|Identity Consistency|Audio-Visual Synchronization|Streaming Generation|Director Agent|Real-time Super Resolution"
+                            >Long Video Generation</span><span class="typewriter-caret" aria-hidden="true"></span>
+                        </p>
+                    </div>
+                </div>
+
+                <a class="intro-scroll-mark" href="#abstract" aria-label="Scroll to the technical content" data-intro-scatter="scroll"></a>
+
+                <div class="intro-next-hero" data-intro-next>
+                    <div class="hero-content intro-hero-content">
+                        <p class="paper-meta">Technical Report | May 28, 2026 | Echo Team @ Joy Future Academy, JD</p>
+                        <h1><span>JoyAI-Echo</span>: Pushing the Frontier of Long Audio-Visual Generation</h1>
+                        <p class="hero-copy">
+                            A memory-driven audio-visual generation framework for minute-level coherent video,
+                            real-time streaming, conversational control, and high-resolution output.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="https://www.researchgate.net/publication/405770309_JoyAI-Echo_Pushing_the_Frontier_of_Long_Audio-Visual_Generation" target="_blank" rel="noopener">Paper</a>
+                            <a class="btn btn-secondary" href="https://github.com/jd-opensource/JoyAI-Echo">Code</a>
+                            <a class="btn btn-secondary" href="#long-video">JoyAI-Echo Cases</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-metrics intro-hero-metrics" aria-label="Key highlights">
+                        <div>
+                            <strong>5 min</strong>
+                            <span>minute-level coherent stories</span>
+                        </div>
+                        <div>
+                            <strong>7.5x</strong>
+                            <span>generation speedup</span>
+                        </div>
+                        <div>
+                            <strong>A/V</strong>
+                            <span>memory-driven consistency</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-scroll-shell" aria-label="JoyAI-Echo technical content">
+            <section id="abstract" class="section">
+                <div class="container">
+                    <div class="section-header fade-in-up">
+                        <h2>Abstract</h2>
+                    </div>
+                    <p class="abstract-text fade-in-up">
+                        Long video generation still suffers from error accumulation, weak temporal coherence, and
+                        prohibitive latency, limiting its applicability to interactive scenarios. We present
+                        <strong>JoyAI-Echo</strong>, a framework that breaks these barriers through four key advances.
+                        Central to its performance, a cross-modal audio-visual memory bank preserves character
+                        appearance and voice timbre consistently over five-minute videos, while a post-training
+                        pipeline combines memory-based reinforcement learning with distribution matching distillation
+                        for a 7.5&times; speedup to substantially boost visual quality and alignment. Empowered by these
+                        two components, JoyAI-Echo decisively outperforms <em>Happy Oyster</em> (Directing mode) on
+                        long-form generation and even surpasses the short-video specialist <em>Wan 2.6</em> on
+                        human-centric tasks. Beyond raw generation quality, an interactive agent enables real-time user
+                        editing through conversational instructions, and a lightweight super-resolution module
+                        maintains high definition under streaming latency, further elevating the overall experience and
+                        delivering instantly editable, conversation-speed video creation. For the first time,
+                        JoyAI-Echo simultaneously achieves long-range cross-modal consistency, real-time inference for
+                        minute-long video, conversational interactivity, and high-resolution output&mdash;without
+                        compromise, inaugurating a new era of interactive video generation. Codes and weights will be
+                        open-sourced.
+                    </p>
+                </div>
+            </section>
+
+            <section id="long-video" class="section section-alt">
+                <div class="container-wide">
+                    <div class="section-header fade-in-up">
+                        <h2>
+                            Long Cases
+                            <span class="av-badge section-av-badge" aria-label="Audio-video samples">
+                                <svg class="av-badge-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24" aria-hidden="true"><path fill="currentColor" d="M6.61743 7.57642c0.37364 -0.15469 0.80389 -0.06916 1.08985 0.21679l8.50002 8.49999c0.2858 0.286 0.3715 0.7163 0.2168 1.0899 -0.1548 0.3734 -0.5196 0.617 -0.9239 0.6171h-4.5859l-1.49999 1.5c-0.78094 0.7809 -2.04708 0.7807 -2.82813 0l-2.08594 -2.0859c-0.78094 -0.781 -0.78095 -2.0471 0 -2.8281l1.5 -1.5V8.50024c0 -0.40441 0.24359 -0.76901 0.61719 -0.92382m1.38281 5.92378c-0.00006 0.2652 -0.1055 0.5196 -0.29296 0.7071l-1.79297 1.7929 2.08593 2.086 1.79297 -1.793 0.07325 -0.0664c0.17794 -0.1458 0.40174 -0.2266 0.63374 -0.2266h2.586l-5.08596 -5.0859zm0.50098 -9.7939c3.27128 -1.37885 7.19558 -0.73781 9.86328 1.92969 2.6677 2.66766 3.3095 6.59191 1.9307 9.86331 -0.2146 0.5088 -0.8017 0.7477 -1.3106 0.5332 -0.5085 -0.2146 -0.7472 -0.8009 -0.5332 -1.3096 1.0739 -2.5477 0.5719 -5.59994 -1.501 -7.67285 -2.0728 -2.07265 -5.1243 -2.57469 -7.67184 -1.50098 -0.50888 0.21439 -1.09605 -0.02433 -1.31054 -0.5332 -0.21428 -0.50871 0.0247 -1.09492 0.5332 -1.30957m2.84668 3.8418c1.3581 -0.19803 2.7899 0.22546 3.835 1.2705 1.0448 1.04512 1.4668 2.4761 1.2685 3.834 -0.0536 0.3673 -0.4953 0.4754 -0.7578 0.2129L11.135 8.30591c-0.2623 -0.26241 -0.1541 -0.70403 0.2129 -0.75781"/></svg>
+                                <span>Audio</span>
+                            </span>
+                        </h2>
+                    </div>
+
+                    <div class="case-carousel fade-in-up" data-case-carousel>
+                        <button class="case-nav case-nav-prev" type="button" aria-label="Previous long video cases" data-carousel-prev>
+                            <span aria-hidden="true">‹</span>
+                        </button>
+                        <div class="case-carousel-viewport" data-empty-label="Long Cases">
+                            <div class="case-grid long-case-grid case-track" data-case-track></div>
+                        </div>
+                        <button class="case-nav case-nav-next" type="button" aria-label="Next long video cases" data-carousel-next>
+                            <span aria-hidden="true">›</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="short-video" class="section">
+                <div class="container-wide">
+                    <div class="section-header fade-in-up">
+                        <h2>
+                            Short Cases
+                            <span class="av-badge section-av-badge" aria-label="Audio-video samples">
+                                <svg class="av-badge-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24" aria-hidden="true"><path fill="currentColor" d="M6.61743 7.57642c0.37364 -0.15469 0.80389 -0.06916 1.08985 0.21679l8.50002 8.49999c0.2858 0.286 0.3715 0.7163 0.2168 1.0899 -0.1548 0.3734 -0.5196 0.617 -0.9239 0.6171h-4.5859l-1.49999 1.5c-0.78094 0.7809 -2.04708 0.7807 -2.82813 0l-2.08594 -2.0859c-0.78094 -0.781 -0.78095 -2.0471 0 -2.8281l1.5 -1.5V8.50024c0 -0.40441 0.24359 -0.76901 0.61719 -0.92382m1.38281 5.92378c-0.00006 0.2652 -0.1055 0.5196 -0.29296 0.7071l-1.79297 1.7929 2.08593 2.086 1.79297 -1.793 0.07325 -0.0664c0.17794 -0.1458 0.40174 -0.2266 0.63374 -0.2266h2.586l-5.08596 -5.0859zm0.50098 -9.7939c3.27128 -1.37885 7.19558 -0.73781 9.86328 1.92969 2.6677 2.66766 3.3095 6.59191 1.9307 9.86331 -0.2146 0.5088 -0.8017 0.7477 -1.3106 0.5332 -0.5085 -0.2146 -0.7472 -0.8009 -0.5332 -1.3096 1.0739 -2.5477 0.5719 -5.59994 -1.501 -7.67285 -2.0728 -2.07265 -5.1243 -2.57469 -7.67184 -1.50098 -0.50888 0.21439 -1.09605 -0.02433 -1.31054 -0.5332 -0.21428 -0.50871 0.0247 -1.09492 0.5332 -1.30957m2.84668 3.8418c1.3581 -0.19803 2.7899 0.22546 3.835 1.2705 1.0448 1.04512 1.4668 2.4761 1.2685 3.834 -0.0536 0.3673 -0.4953 0.4754 -0.7578 0.2129L11.135 8.30591c-0.2623 -0.26241 -0.1541 -0.70403 0.2129 -0.75781"/></svg>
+                                <span>Audio</span>
+                            </span>
+                        </h2>
+                    </div>
+
+                    <div class="case-carousel fade-in-up" data-case-carousel>
+                        <button class="case-nav case-nav-prev" type="button" aria-label="Previous short clip cases" data-carousel-prev>
+                            <span aria-hidden="true">‹</span>
+                        </button>
+                        <div class="case-carousel-viewport" data-empty-label="Short Cases">
+                            <div class="case-grid case-track" data-case-track></div>
+                        </div>
+                        <button class="case-nav case-nav-next" type="button" aria-label="Next short clip cases" data-carousel-next>
+                            <span aria-hidden="true">›</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        <section id="conclusions" class="section section-alt">
+            <div class="container-wide">
+                <div class="section-header fade-in-up">
+                    <h2>Key Conclusions</h2>
+                </div>
+                <div class="conclusion-grid">
+                    <article class="conclusion-card fade-in-up">
+                        <span>01</span>
+                        <h3>Cross-modal memory keeps identity alive.</h3>
+                        <p>Slot-paired visual and audio memories preserve face, appearance, voice timbre, and face-voice correspondence across distant shots.</p>
+                    </article>
+                    <article class="conclusion-card fade-in-up">
+                        <span>02</span>
+                        <h3>Streaming generation becomes practical.</h3>
+                        <p>Memory-conditioned acceleration and low-step distillation deliver a 7.5x speedup over the original multi-step pipeline.</p>
+                    </article>
+                    <article class="conclusion-card fade-in-up">
+                        <span>03</span>
+                        <h3>Interaction is part of the generation loop.</h3>
+                        <p>The Director Agent expands rough user intent into structured screenplay, shots, characters, scenes, and localized revisions.</p>
+                    </article>
+                    <article class="conclusion-card fade-in-up">
+                        <span>04</span>
+                        <h3>Resolution stays aligned with latency.</h3>
+                        <p>A one-step audio-visual super-resolution stage sharpens 1K output without breaking streaming generation constraints.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="results" class="section">
+            <div class="container-wide">
+                <div class="section-header fade-in-up">
+                    <h2>Results</h2>
+                    <p>Human preference study across long-form consistency, audio quality, prompt following, and human-centric generation.</p>
+                </div>
+
+                <div class="table-card fade-in-up">
+                    <div class="results-caption">
+                        <div class="results-caption-copy">
+                            <h3>GSB user study on long- and short-video generation</h3>
+                            <p>The numbers denote the percentage of user preferences.</p>
+                        </div>
+                    </div>
+                    <div class="table-wrapper">
+                        <table class="results-table gsb-table">
+                            <colgroup>
+                                <col class="aspect-col">
+                                <col class="metric-col">
+                                <col class="metric-col">
+                                <col class="metric-col">
+                                <col class="metric-col">
+                                <col class="metric-col">
+                                <col class="metric-col">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Aspect</th>
+                                    <th colspan="3">Long Video</th>
+                                    <th colspan="3">Short Video (Human-Centric)</th>
+                                </tr>
+                                <tr>
+                                    <th>JoyAI-Echo</th>
+                                    <th>Tie</th>
+                                    <th>HappyOyster<br>(Directing)</th>
+                                    <th>JoyAI-Echo</th>
+                                    <th>Tie</th>
+                                    <th>Wan 2.6</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Visual aesthetics</td>
+                                    <td><strong>63.6%</strong></td>
+                                    <td>8.8%</td>
+                                    <td>27.6%</td>
+                                    <td><strong>58.8%</strong></td>
+                                    <td>14.7%</td>
+                                    <td>26.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Audio quality</td>
+                                    <td><strong>81.7%</strong></td>
+                                    <td>6.5%</td>
+                                    <td>11.8%</td>
+                                    <td>32.3%</td>
+                                    <td>30.9%</td>
+                                    <td>36.8%</td>
+                                </tr>
+                                <tr>
+                                    <td>Prompt following</td>
+                                    <td><strong>80.6%</strong></td>
+                                    <td>13.5%</td>
+                                    <td>5.9%</td>
+                                    <td>33.8%</td>
+                                    <td>36.8%</td>
+                                    <td>29.4%</td>
+                                </tr>
+                                <tr>
+                                    <td>IP consistency</td>
+                                    <td><strong>59.4%</strong></td>
+                                    <td>12.9%</td>
+                                    <td>27.7%</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                    <td>--</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contributors" class="section section-alt">
+            <div class="container-wide">
+                <div class="section-header fade-in-up">
+                    <h2>Authors</h2>
+                </div>
+                <p class="contributors-list fade-in-up">
+                    <span>Haoran Li<sup>1,*</sup></span>
+                    <span>Jie Huang<sup>1,*</sup></span>
+                    <span>Fredreic Li<sup>2,*</sup></span>
+                    <span>Shichen Ma<sup>1,*</sup></span>
+                    <span>Yijun Liu<sup>3</sup></span>
+                    <span>Jiaqi Shi<sup>4</sup></span>
+                    <span>Yanwen Ma<sup>5</sup></span>
+                    <span>Yaofeng Su<sup>6</sup></span>
+                    <span>Xin Lu<sup>4</sup></span>
+                    <span>Haoyu Wang<sup>3</sup></span>
+                    <span>Xiaoxiao Ma<sup>4</sup></span>
+                    <span>Guohui Zhang<sup>4</sup></span>
+                    <span>Yaowei Li<sup>2</sup></span>
+                    <span>Mingchen Zhong<sup>4</sup></span>
+                    <span>Junhao Zhuang<sup>1</sup></span>
+                    <span>Songchun Zhang<sup>7</sup></span>
+                    <span>Weiyang Jin<sup>8</sup></span>
+                    <span>Yuxuan Bian<sup>9</sup></span>
+                    <span>Shiyi Zhang<sup>3</sup></span>
+                    <span>Haojun Xu<sup>5</sup></span>
+                    <span>Shuai Lu<sup>1</sup></span>
+                    <span>Xin Han<sup>1</sup></span>
+                    <span>Wei Tang<sup>1</sup></span>
+                    <span>Tong He<sup>1</sup></span>
+                    <span>Jiaqi Wang<sup>1</sup></span>
+                    <span>Ping Luo<sup>8</sup></span>
+                    <span>Haoyang Huang<sup>1</sup></span>
+                    <span>Zeyue Xue<sup>1,8,*,+</sup></span>
+                    <span>Nan Duan<sup>1</sup></span>
+                </p>
+                <p class="affiliations-list fade-in-up">
+                    <span><sup>1</sup>Joy Future Academy, JD</span>
+                    <span><sup>2</sup>Peking University</span>
+                    <span><sup>3</sup>Tsinghua University</span>
+                    <span><sup>4</sup>The University of Science and Technology of China</span>
+                    <span><sup>5</sup>Beihang University</span>
+                    <span><sup>6</sup>Fudan University</span>
+                    <span><sup>7</sup>The Hong Kong University of Science and Technology</span>
+                    <span><sup>8</sup>The University of Hong Kong</span>
+                    <span><sup>9</sup>The Chinese University of Hong Kong</span>
+                </p>
+                <p class="author-note fade-in-up">
+                    * Equal contribution. + Project lead.
+                </p>
+            </div>
+        </section>
+
+        <section id="bibtex" class="section">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2>BibTeX</h2>
+                </div>
+                <div class="bibtex-card fade-in-up">
+                    <button class="bibtex-copy" type="button" data-copy-bibtex>Copy</button>
+                    <pre><code>@techreport{joyai2026echo,
+  title        = {JoyAI-Echo: Pushing the Frontier of Long Audio-Visual Generation},
+  author       = {{Echo Team @ Joy Future Academy, JD}},
+  institution  = {Joy Future Academy, JD},
+  year         = {2026},
+  month        = {May}
+}</code></pre>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Echo Team, Joy Future Academy, JD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal" aria-hidden="true" role="dialog" aria-label="Video preview">
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-window">
+            <button class="modal-close" type="button" aria-label="Close preview" data-close-modal></button>
+            <video class="modal-video" controls playsinline></video>
+            <div class="modal-copy">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
